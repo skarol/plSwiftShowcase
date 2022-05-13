@@ -15,6 +15,7 @@
 		1424B6142806C3AB00C547E8 /* plSwiftShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424B6132806C3AB00C547E8 /* plSwiftShowcaseTests.swift */; };
 		1424B61E2806C3AB00C547E8 /* plSwiftShowcaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424B61D2806C3AB00C547E8 /* plSwiftShowcaseUITests.swift */; };
 		1424B6202806C3AB00C547E8 /* plSwiftShowcaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424B61F2806C3AB00C547E8 /* plSwiftShowcaseUITestsLaunchTests.swift */; };
+		14C2DC78282D2546009050F3 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 14C2DC77282D2546009050F3 /* DesignSystem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		1424B6192806C3AB00C547E8 /* plSwiftShowcaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plSwiftShowcaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1424B61D2806C3AB00C547E8 /* plSwiftShowcaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plSwiftShowcaseUITests.swift; sourceTree = "<group>"; };
 		1424B61F2806C3AB00C547E8 /* plSwiftShowcaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plSwiftShowcaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14C2DC76282D23E9009050F3 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C2DC78282D2546009050F3 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +81,12 @@
 		1424B5F02806C3AA00C547E8 = {
 			isa = PBXGroup;
 			children = (
+				14C2DC76282D23E9009050F3 /* DesignSystem */,
 				1424B5FB2806C3AA00C547E8 /* plSwiftShowcase */,
 				1424B6122806C3AB00C547E8 /* plSwiftShowcaseTests */,
 				1424B61C2806C3AB00C547E8 /* plSwiftShowcaseUITests */,
 				1424B5FA2806C3AA00C547E8 /* Products */,
+				1424B6302806C9C700C547E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +131,13 @@
 			path = plSwiftShowcaseUITests;
 			sourceTree = "<group>";
 		};
+		1424B6302806C9C700C547E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +154,9 @@
 			dependencies = (
 			);
 			name = plSwiftShowcase;
+			packageProductDependencies = (
+				14C2DC77282D2546009050F3 /* DesignSystem */,
+			);
 			productName = plSwiftShowcase;
 			productReference = 1424B5F92806C3AA00C547E8 /* plSwiftShowcase.app */;
 			productType = "com.apple.product-type.application";
