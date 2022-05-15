@@ -54,12 +54,15 @@ public extension DSTokens.Colors {
     // MARK: - Separator
 
     /// Separator/Primary
-    static let separatorPrimary = DSColor(CGColor.from(hex: "##DADADA")!)
+    static let separatorPrimary = DSColor(CGColor.from(hex: "#DADADA")!)
 
     // MARK: - Gradient
 
     /// Gradient/Start
-    static let gradientStart = DSColor(CGColor.from(hex: "##FF26B2")!)
+    static let gradientStart = DSColor(CGColor.from(hex: "#FF26B2")!)
     /// Gradient/End
-    static let gradientEnd = DSColor(CGColor.from(hex: "##3F51B5")!)
+    static let gradientEnd = DSColor(CGColor.from(hex: "#7388FF")!)
+
+    /// Shadow/Primary
+    static let shadowPrimary = DSColor(CGColor.from(hex: "#00000040")!)
 }
