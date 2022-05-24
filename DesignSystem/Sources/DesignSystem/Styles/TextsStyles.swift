@@ -58,6 +58,7 @@ struct TextStylesPreview: PreviewProvider {
                             .background(Color.secondary)
                         TextStylePreviewView(styleName: "Body", style: DSStyles.Texts.body)
                         TextStylePreviewView(styleName: "Body/OnColor", style: DSStyles.Texts.bodyOnColor)
+                            .background(Color.secondary)
                         TextStylePreviewView(styleName: "Button/Filled", style: DSStyles.Texts.buttonFilled)
                             .background(Color.secondary)
                         TextStylePreviewView(styleName: "Button/Stroked", style: DSStyles.Texts.buttonStroked)

@@ -41,7 +41,7 @@ public extension DSTokens.Colors {
     // MARK: - Accent
 
     /// Accent/Primary/Default
-    static let accentPrimaryDefault = DSColor(CGColor.from(hex: "#AA49DB")!)
+    static let accentPrimaryDefault = DSColor(CGColor.from(hex: "#AA49D8")!)
     /// Accent/Primary/Highlighted
     static let accentPrimaryHighlighted = DSColor(CGColor.from(hex: "#BE7FDD")!)
     /// Accent/Primary/Disabled

@@ -45,18 +45,14 @@ public extension DSStyles.Buttons {
             .reduce(into: [:]) { partialResult, state in
                 partialResult[state] = ViewAttributes(
                     backgroundColor: backgroundColorForState[state],
-                    cornerRadius: DSTokens.CornerRadiuses.l
+                    cornerRadius: DSTokens.CornerRadiuses.m
                 )
             }
 
-        return textStyle.toButtonStateAttributes()
-            .toStates(viewAttributes: viewAttributesForState)
-            .toButtonAttributes()
-            .with(contentInsets: .init(
-                small: [.horizontal: DSTokens.Spaces.l, .vertical: DSTokens.Spaces.s],
-                compact: [.horizontal: DSTokens.Spaces.xl, .vertical: DSTokens.Spaces.m],
-                regular: [.horizontal: DSTokens.Spaces.xxl, .vertical: DSTokens.Spaces.m]
-            ))
+        return makeDSButtonStyle(
+            textStyle: textStyle,
+            viewAttributesForState: viewAttributesForState
+        )
     }
 
     private static func makeDSButtonStyle(
@@ -67,11 +63,21 @@ public extension DSStyles.Buttons {
             .reduce(into: [:]) { partialResult, state in
                 partialResult[state] = ViewAttributes(
                     borderAttributes: .init(width: 2, color: borderColorForState[state]),
-                    cornerRadius: DSTokens.CornerRadiuses.l
+                    cornerRadius: DSTokens.CornerRadiuses.m
                 )
             }
 
-        return textStyle.toButtonStateAttributes()
+        return makeDSButtonStyle(
+            textStyle: textStyle,
+            viewAttributesForState: viewAttributesForState
+        )
+    }
+
+    private static func makeDSButtonStyle(
+        textStyle: SizeVariants<TextAttributes>,
+        viewAttributesForState: [ControlState: ViewAttributes]
+    ) -> SizeVariants<ButtonAttributes> {
+        textStyle.toButtonStateAttributes()
             .toStates(viewAttributes: viewAttributesForState)
             .toButtonAttributes()
             .with(contentInsets: .init(

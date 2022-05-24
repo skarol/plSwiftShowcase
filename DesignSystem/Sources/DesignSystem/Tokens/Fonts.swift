@@ -10,11 +10,11 @@ import DesignSystemUtils
 
 extension DSTokens.Fonts {
     static let header1 = SizeVariants<DSFont>(
-        compact: headers.withSize(32),
+        small: headers.withSize(32),
         regular: headers.withSize(48)
     )
     static let header2 = SizeVariants<DSFont>(
-        compact: headers.withSize(24),
+        small: headers.withSize(24),
         regular: headers.withSize(32)
     )
     static let body = SizeVariants<DSFont>(regular: primary)
