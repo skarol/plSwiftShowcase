@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "designsystemutils",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:skarol/DesignSystemUtils.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8311e75c914898d0b86748fd6b1ec083c5ef9e03"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -11,7 +11,7 @@ let package = Package(
             targets: ["DesignSystem"]),
     ],
     dependencies: [
-        .package(url: "git@github.com:skarol/DesignSystemUtils.git", branch: "plSwift"),
+        .package(url: "git@github.com:skarol/DesignSystemUtils.git", branch: "main"),
     ],
     targets: [
         .target(

@@ -128,26 +128,4 @@ private struct ButtonStylePreviewView: View {
     }
 }
 
-extension View {
-    @ViewBuilder func wrapInColorSchemes(colorSchemes: [ColorScheme] = [.light, .dark]) -> some View {
-        Group {
-            ForEach(colorSchemes) { scheme in
-                HStack {
-                    Text(String(describing: scheme))
-                        .foregroundColor(Color(dsColor: DSTokens.Colors.textPrimary))
-                        .rotationEffect(.degrees(-90))
-                    self
-                }
-                .preferredColorScheme(scheme)
-            }
-        }
-    }
-}
-
-extension ColorScheme: Identifiable {
-    public var id: Int {
-        self.hashValue
-    }
-}
-
 #endif
